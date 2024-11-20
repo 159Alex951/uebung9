@@ -1,6 +1,6 @@
 import React from "react";
 import { VegaLite } from "react-vega";
-import sample1 from "/data/sample1.json"; // Relativer Pfad zur Datei
+import sample1 from "/data/sample1.json";
 import { Container, CssBaseline, Typography } from "@mui/material";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <Typography variant="h4" gutterBottom>
           Vega-Lite Visualisierung
         </Typography>
-        <VegaLite spec={sample1} /> {/* Korrektes Prop */}
+        <VegaLite spec={sample1} />
       </Container>
     </div>
   );
