@@ -1,0 +1,22 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Ein einfaches Balkendiagramm",
+    "data": {
+      "values": [
+        {"Kategorie": "A", "Wert": 28},
+        {"Kategorie": "B", "Wert": 55},
+        {"Kategorie": "C", "Wert": 43},
+        {"Kategorie": "D", "Wert": 91},
+        {"Kategorie": "E", "Wert": 81},
+        {"Kategorie": "F", "Wert": 53},
+        {"Kategorie": "G", "Wert": 19},
+        {"Kategorie": "H", "Wert": 87}
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "Kategorie", "type": "ordinal"},
+      "y": {"field": "Wert", "type": "quantitative"}
+    }
+  }
+  

@@ -1,11 +1,18 @@
-import Typography from "@mui/material/Typography";
+import React from "react";
+import { VegaLite } from "react-vega";
+import sample1 from "/data/sample1.json"; // Relativer Pfad zur Datei
+import { Container, CssBaseline, Typography } from "@mui/material";
 
 function App() {
   return (
     <div>
-      <Typography variant="h1" gutterBottom>
-        Kokain :)
-      </Typography>
+      <CssBaseline />
+      <Container>
+        <Typography variant="h4" gutterBottom>
+          Vega-Lite Visualisierung
+        </Typography>
+        <VegaLite spec={sample1} /> {/* Korrektes Prop */}
+      </Container>
     </div>
   );
 }
